@@ -4,10 +4,23 @@
 // iedereen: https://fdnd.directus.app/items/person/?fields=id,name,github_handle,avatar&filter={%22squads%22:{%22squad_id%22:{%22name%22:%22Minor%20Web%20Dev%22}}}&sort=name
 
 const baseURL = 'https://fdnd.directus.app/';
-const endpointMe = 'items/person/67';
+const endpointMe = 'items/person/71';
+
+// asjvajklsfvkla
+const myURL = baseURL + endpointMe;
 
 
 
+// asjvajklsfvkla
+getData(myURL).then( data71 => {
+	
+// asjvajklsfvkla
+	let deH1 = document.querySelector("h1");
+// asjvajklsfvkla
+	let myName = data71.data.name;
+// asjvajklsfvkla
+	deH1.textContent = myName;
+} );
 
 
 
